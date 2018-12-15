@@ -1,0 +1,347 @@
+.body {
+    display: flex
+    font-size: 10px
+    font-family: 'Lato', sans-serif
+    
+    .header {
+        color: white
+        background-image: url("../res/img/lauryn-vyvlecka-1092034-unsplash.jpg")
+        background-position: 50% 50%
+        background-size: cover
+        background-attachment: fixed
+        position: fixed
+        height: 100vh
+        width: 35%
+        
+        .header_wrapper {
+            margin: 0 auto
+            width: 80%
+            
+            .header_title {
+                margin-top: 60%
+                line-height: 1
+                                
+                .header_title-hi {
+                    font-size: 3rem
+                    margin: 0
+                    padding: 0
+                    text-transform: uppercase
+                    letter-spacing: 3px
+                }
+                
+                .header_title-name {
+                    font-size: 3rem
+                    margin: 0
+                    padding: 0
+                    text-transform: uppercase
+                    letter-spacing: 3px
+
+                }
+                
+                .header_title-info {
+                    color: rgb(185, 185, 185)
+                    font-size: 1.3rem
+                    margin: 0
+                    padding: 0
+                    text-transform: uppercase
+                    font-weight: 400
+                }
+            }
+            
+            .header_pageNav {
+                margin: 10px 0
+                
+                .header_pageNav-list {
+                    font-size: 0.9rem
+                    list-style: none
+                    padding: 0
+                    
+                    .header_pageNav-items {
+                        display: block
+                        padding: 15px 0
+                        border-bottom: 1px solid rgb(185, 185, 185)
+                        transition: all 0.4s ease
+                        
+                        .about, .ability, .projects, .contact {
+                            padding: 15px 0 15px 0
+                            color: white 
+                            text-decoration: none
+                        }
+                        
+                        &:hover {
+                            border-bottom: 1px solid white
+                            padding: 15px 0 15px 15px
+                            transition: all 0.4s ease
+                        }
+                    }
+                }
+            }
+            
+            .header_links {
+                display: flex
+                flex-direction: row
+                list-style: none
+                padding: 0
+                margin-top: 10px
+                
+                .header_links-items {
+                    margin: 0 auto
+                    
+                    .linkedin, .github, .email {
+                        fill: white
+                    }
+                }
+            }
+        }
+    }
+    
+    .main {
+        margin-left: 35%
+        width: 67%
+        
+        .info {
+            margin: 10% auto 0 auto
+            width: 90%
+            
+            h2 {
+                font-size: 1.5rem
+                padding: 0 50px 10px 50px
+                line-height: 3rem
+                font-weight: 400
+                margin: 0 auto
+                width: 75%
+            }
+            
+            p {
+                color: rgb(185, 185, 185)
+                font-size: 0.9rem
+                line-height: 2rem
+                margin: 0 auto
+                max-width: 92%
+                font-weight: 400
+            }
+        }
+        
+        .skills {
+            width: 90%
+            margin: 50px auto
+            
+            h2 {
+                font-size: 1.7rem
+                text-align: center
+                padding: 0
+                font-weight: 400
+            }
+            
+            h3 {
+                color: rgb(185, 185, 185)
+                font-size: 1rem
+                font-weight: 400
+                margin: 0 auto
+                padding: 0
+                text-align: center
+                width: 90%
+                font-weight: 400
+            }
+            
+            .grid {
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                margin: 0 auto
+                margin-top: 6%
+                width: 60%
+                
+                .grid-cell {
+                    margin: 0 auto
+                    text-align: center
+                    font-size: 1rem
+                    width: 33%
+                    
+                    i {
+                        padding: 0
+                        margin: 0
+                        width: 100px
+                        height: 100px
+                    }
+                    
+                    h4 {
+                        font-weight: 400
+                    }
+                }
+            }
+        }
+        
+        .contactMe {
+            background-color: #FAFAFA
+            padding: 20px 5%
+            margin: 0 auto
+            
+            .contact_title {
+                font-size: 1.7rem
+                font-weight: 400
+                text-align: center
+                padding: 0
+            }
+            
+            .contact_subtitle {
+                color: #A6A6A6
+                font-size: 1rem
+                font-weight: 400
+                padding: 0
+                text-align: center
+            }
+            
+            .contact_container {
+                display: flex
+                flex-direction: row
+                margin: 0 auto
+                
+                .contact_form {
+                    display: flex
+                    flex-direction: column
+                    width: 65%
+                    
+                    .contact_form-info {
+                        display: flex
+                        flex-direction: row
+                        
+                        .contact_name, .contact_email {
+                            background-color: #FAFAFA
+                            
+                            border: none
+                            border-bottom: 1px solid #A6A6A6
+                            font-size: 1rem
+                            line-height: 2
+                            margin: 0 0 20px 0
+                            width: 50%
+                        }
+                        
+                        .contact_name {
+                            margin-right: 2.5%
+                        }
+                    }
+                    
+                    #contact_message {
+                        background-color: #FAFAFA
+                        font-size: 1rem
+                        border: 1px solid #A6A6A6
+                        padding: 10px
+                    }
+                    
+                    .contact_button {
+                        color: #000
+                        width: 30%
+                        background-color: #FAFAFA
+                        border: 1px solid #000
+                        font-size: 1rem
+                        margin-top: 5%
+                        padding: 10px
+                    }
+                }
+                
+                .contact_info {
+                    margin-top: 14%
+                    width: 35%
+                    
+                    .contact_info-phone, .contact_info-email, .contact_info-website {
+                        font-size: 1rem
+                        text-align: center
+                        color: #A6A6A6
+                    }
+                }
+            }
+        }
+        
+        .footer {
+            background-color: #DCDCDC
+            color: #808080
+            text-align: center
+            padding: 20px 0
+            font-size: 0.8rem
+        }
+    }
+    @media (max-width: 900px) {
+        .header {
+            color: white
+            background-image: url("../res/img/lauryn-vyvlecka-1092034-unsplash.jpg")
+            background-position: 50% 50%
+            background-size: cover
+            background-attachment: fixed
+            position: absolute
+            height: 100vh
+            width: 100%
+            
+             .header_wrapper {
+                margin: 0 auto
+                width: 80%
+                
+                .header_title {
+                    margin-top: 60%
+                    line-height: 1
+                                    
+                    .header_title-hi {
+                        font-size: 3rem
+                        margin: 0
+                        padding: 0
+                        text-align: center
+                        text-transform: uppercase
+                        letter-spacing: 3px
+                    }
+                    
+                    .header_title-name {
+                        font-size: 3rem
+                        margin: 0
+                        padding: 0
+                        text-align: center
+                        text-transform: uppercase
+                        letter-spacing: 3px
+
+                    }
+                    
+                    .header_title-info {
+                        color: rgb(185, 185, 185)
+                        font-size: 1.3rem
+                        margin-top: 20px
+                        padding: 0
+                        text-align: center
+                        text-transform: uppercase
+                        font-weight: 400
+                    }
+                }
+                
+                .header_pageNav {
+                    display: none
+                    margin: 10px 0
+                }
+                
+                .header_links {
+                    display: flex
+                    flex-direction: row
+                    list-style: none
+                    padding: 0
+                    justify-content: center
+                    
+                    .header_links-items {
+                        margin: 20px
+                        
+                        .linkedin, .github, .email {
+                            fill: rgb(185, 185, 185)
+                            
+                            &:hover {
+                                fill: white
+                                transition: all 0.4s ease
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .main {
+            margin-top: 120%
+            margin-left: 0
+            width: 100%
+        }
+    }
+}
