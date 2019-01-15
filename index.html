@@ -67,7 +67,7 @@
         <section id="about" class="main">
             <!-- About -->
             <div class="info">
-                <h2>Web developer and designer passionate about delivering unique and immersive experiences through digital media</h2>
+                <h2>Web developer and designer passionate about delivering unique and immersive experiences through digital media.</h2>
                 <p>I'm a simple dude who dreams in code. I spend much of my time working on a myriad of projects including websites, video games, and mobile applications. When I'm not behind a computer screen, I can often be found playing music, reading and writing literature, or out for a walk in the forest.</p>
             </div>
 
@@ -120,13 +120,13 @@
                 <h2 class="contact_title">Get In Touch</h2>
                 <h4 class="contact_subtitle">I'd Love to hear from you!</h4>
                 <div class="contact_container">
-                    <form class="contact_form" action="">
+                    <form class="contact_form" name="contactform" method="post" action="send_form_email.php">
                         <div class="contact_form-info">
-                            <input class="contact_name" type="text" placeholder="Name">
-                            <input class="contact_email" type="text" placeholder="Email">
+                            <input class="contact_name" type="text" name="name" placeholder="Name">
+                            <input class="contact_email" type="text" name="email" placeholder="Email">
                         </div>
-                        <textarea id="contact_message" cols="30" rows="10" placeholder="Message"></textarea>
-                        <button class="contact_button">Send Message</button>
+                        <textarea id="contact_message" cols="30" rows="10" name="comments" placeholder="Message..."></textarea>
+                        <button class="contact_button" type="submit" value="Submit">Send Message</button>
                     </form>
                     <div class="contact_info">
                         <p class="contact_info-phone">+1 (647)-332-0226</p>
